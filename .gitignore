@@ -1,0 +1,69 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Compiled libraries
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Build directories
+build/
+bin/
+obj/
+out/
+cmake-build-*/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# CLion
+.idea/
+*.iml
+
+# Other editors
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Package managers
+# vcpkg
+vcpkg_installed/
+
+# conan
+conanbuildinfo.txt
+conan.lock
+
+# Testing & Temporary files
+test_output/
+*.log
+*.tmp
+*.bak

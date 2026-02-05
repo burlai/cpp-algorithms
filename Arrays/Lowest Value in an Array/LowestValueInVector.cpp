@@ -14,25 +14,27 @@
     // If current element < "minValue"
     // "minValue" = current element
 
+
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-int myArray[] = {12, 9, 3, 6, 8, 10, 2, 26, 1};
+vector<int> myVector = {10, 69, 345, 664, 21, 634, 75, 754, 877, 234, 3};
 
 int main() {
-    
-    int sizeOfArray = sizeof(myArray) / sizeof(myArray[0]);
-    int minValue = myArray[0];
+        int minValue = myVector.at(0);
 
-    for(int i = 0; i < sizeOfArray; i++) {
-        if(myArray[i] < minValue) {
-            minValue = myArray[i];
+
+    cout << "size of vector: " << myVector.size() << endl;
+
+    for(int i = 0; i < myVector.size(); i++) {
+        if(myVector[i] < minValue) {
+            minValue = myVector[i];
         }
     }
 
-    cout << "Size of array: " << sizeOfArray << endl;
-    cout << "Lowest value: " << minValue;
+    cout << "Lowest value in vector: " << minValue;
 
     return 0;
 }
